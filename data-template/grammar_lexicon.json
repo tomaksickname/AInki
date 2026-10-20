@@ -1,0 +1,3849 @@
+{
+  "meta": {
+    "version": "4.0",
+    "total_rules": 131,
+    "total_clusters": 25
+  },
+  "clusters": {
+    "order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "definitions": {
+      "1": {
+        "name": "Core Sentence",
+        "rules": [
+          "R001",
+          "R002",
+          "R003",
+          "R004",
+          "R005"
+        ]
+      },
+      "2": {
+        "name": "Gender & Number",
+        "rules": [
+          "R006",
+          "R007",
+          "R008",
+          "R009",
+          "R010",
+          "R011"
+        ]
+      },
+      "3": {
+        "name": "Genitive Case",
+        "rules": [
+          "R012",
+          "R013",
+          "R014",
+          "R015",
+          "R016",
+          "R017",
+          "R018"
+        ]
+      },
+      "4": {
+        "name": "Dative Case",
+        "rules": [
+          "R019",
+          "R020",
+          "R021",
+          "R022",
+          "R023",
+          "R024"
+        ]
+      },
+      "5": {
+        "name": "Instrumental Case",
+        "rules": [
+          "R025",
+          "R026",
+          "R027",
+          "R028",
+          "R029"
+        ]
+      },
+      "6": {
+        "name": "Prepositional Case",
+        "rules": [
+          "R030",
+          "R031",
+          "R032",
+          "R033",
+          "R034"
+        ]
+      },
+      "7": {
+        "name": "Full Case Paradigm",
+        "rules": [
+          "R035",
+          "R036",
+          "R037",
+          "R038",
+          "R039",
+          "R040"
+        ]
+      },
+      "8": {
+        "name": "Adjective Systems",
+        "rules": [
+          "R041",
+          "R042",
+          "R043",
+          "R044",
+          "R045"
+        ]
+      },
+      "9": {
+        "name": "Comparative & Superlative",
+        "rules": [
+          "R046",
+          "R047",
+          "R048",
+          "R049"
+        ]
+      },
+      "10": {
+        "name": "Verb Aspect",
+        "rules": [
+          "R050",
+          "R051",
+          "R052",
+          "R053",
+          "R054",
+          "R055",
+          "R056"
+        ]
+      },
+      "11": {
+        "name": "Verb Tense & Mood",
+        "rules": [
+          "R057",
+          "R058",
+          "R059",
+          "R060",
+          "R061",
+          "R062"
+        ]
+      },
+      "12": {
+        "name": "Reflexive Verbs",
+        "rules": [
+          "R063",
+          "R064",
+          "R065",
+          "R066"
+        ]
+      },
+      "13": {
+        "name": "Verbs of Motion",
+        "rules": [
+          "R067",
+          "R068",
+          "R069",
+          "R070",
+          "R071",
+          "R072"
+        ]
+      },
+      "14": {
+        "name": "Verb Government",
+        "rules": [
+          "R073",
+          "R074",
+          "R075",
+          "R076",
+          "R077"
+        ]
+      },
+      "15": {
+        "name": "Verb Prefixes",
+        "rules": [
+          "R078",
+          "R079",
+          "R080"
+        ]
+      },
+      "16": {
+        "name": "Participles",
+        "rules": [
+          "R081",
+          "R082",
+          "R083",
+          "R084",
+          "R085"
+        ]
+      },
+      "17": {
+        "name": "Gerunds",
+        "rules": [
+          "R086",
+          "R087",
+          "R088"
+        ]
+      },
+      "18": {
+        "name": "Personal & Possessive Pronouns",
+        "rules": [
+          "R089",
+          "R090",
+          "R091",
+          "R092",
+          "R093"
+        ]
+      },
+      "19": {
+        "name": "Other Pronouns",
+        "rules": [
+          "R094",
+          "R095",
+          "R096",
+          "R097",
+          "R098"
+        ]
+      },
+      "20": {
+        "name": "Numerals",
+        "rules": [
+          "R099",
+          "R100",
+          "R101",
+          "R102",
+          "R103",
+          "R104",
+          "R105",
+          "R106"
+        ]
+      },
+      "21": {
+        "name": "Adverbs",
+        "rules": [
+          "R107",
+          "R108",
+          "R109",
+          "R110"
+        ]
+      },
+      "22": {
+        "name": "Prepositions",
+        "rules": [
+          "R111",
+          "R112",
+          "R113",
+          "R114",
+          "R115"
+        ]
+      },
+      "23": {
+        "name": "Clause Structure",
+        "rules": [
+          "R116",
+          "R117",
+          "R118",
+          "R119",
+          "R120",
+          "R121"
+        ]
+      },
+      "24": {
+        "name": "Reported Speech",
+        "rules": [
+          "R122",
+          "R123",
+          "R124"
+        ]
+      },
+      "25": {
+        "name": "Particles, Negation & Word Order",
+        "rules": [
+          "R125",
+          "R126",
+          "R127",
+          "R128",
+          "R129",
+          "R130",
+          "R131"
+        ]
+      }
+    }
+  },
+  "rules": {
+    "R001": {
+      "cluster": 1,
+      "name": "Nominative-Accusative basic sentence",
+      "description": "Subject in nominative, direct object in accusative",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R002": {
+      "cluster": 1,
+      "name": "Verb agreement with subject",
+      "description": "Verb person and number agree with subject",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R003": {
+      "cluster": 1,
+      "name": "Present tense: first and second conjugation",
+      "description": "Regular present tense endings",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R004": {
+      "cluster": 1,
+      "name": "Past tense: gender and number agreement",
+      "description": "Past tense agrees with subject in gender and number",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R005": {
+      "cluster": 1,
+      "name": "Zero copula in present",
+      "description": "No 'to be' in present tense",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R006": {
+      "cluster": 2,
+      "name": "Noun gender",
+      "description": "Masculine, feminine, neuter gender endings",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R007": {
+      "cluster": 2,
+      "name": "Regular plural formation",
+      "description": "Standard plural endings -ы/-и/-а/-я",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R008": {
+      "cluster": 2,
+      "name": "Irregular plurals",
+      "description": "человек/люди, ребёнок/дети, etc.",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R009": {
+      "cluster": 2,
+      "name": "Plural-only and singular-only nouns",
+      "description": "Nouns used only in plural or singular",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R010": {
+      "cluster": 2,
+      "name": "Adjective agreement in gender and number",
+      "description": "Adjective endings match noun gender and number",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R011": {
+      "cluster": 2,
+      "name": "Adjective-noun word order",
+      "description": "Adjective precedes noun in neutral order",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R012": {
+      "cluster": 3,
+      "name": "Genitive: possession",
+      "description": "Genitive case for possession",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular noun in genitive",
+        "masc_sg": "masculine singular noun in genitive",
+        "neut_sg": "neuter singular noun in genitive",
+        "pl": "plural noun in genitive",
+        "adj_agr": "adjective agreeing in genitive"
+      }
+    },
+    "R013": {
+      "cluster": 3,
+      "name": "Genitive: negation (нет + Gen)",
+      "description": "Genitive case after нет",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular noun after нет",
+        "masc_sg": "masculine singular noun after нет",
+        "neut_sg": "neuter singular noun after нет",
+        "pl": "plural noun after нет",
+        "adj_agr": "adjective agreeing in genitive after нет"
+      }
+    },
+    "R014": {
+      "cluster": 3,
+      "name": "Genitive: quantity",
+      "description": "Много, мало, несколько + genitive",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular noun after quantity word",
+        "masc_sg": "masculine singular noun after quantity word",
+        "neut_sg": "neuter singular noun after quantity word",
+        "pl": "plural noun after quantity word",
+        "adj_agr": "adjective agreeing in genitive after quantity word"
+      }
+    },
+    "R015": {
+      "cluster": 3,
+      "name": "Genitive: partitive",
+      "description": "Partitive genitive for indefinite quantity",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular noun in partitive",
+        "masc_sg": "masculine singular noun in partitive",
+        "neut_sg": "neuter singular noun in partitive",
+        "adj_agr": "adjective in partitive construction"
+      }
+    },
+    "R016": {
+      "cluster": 3,
+      "name": "Genitive plural endings",
+      "description": "Genitive plural formation",
+      "facets": [
+        "-ов",
+        "-ев",
+        "-ей",
+        "zero ending",
+        "zero ending (soft)",
+        "солдат",
+        "глаз",
+        "человек → человек (GenPl)",
+        "яблок",
+        "облаков",
+        "кофе",
+        "сапог",
+        "чулок",
+        "носок → носков",
+        "яблок, но апельсинов",
+        "англичан",
+        "крестьян",
+        "ботинок → ботинок",
+        "туфель",
+        "полотенец",
+        "сердец",
+        "колец",
+        "овец",
+        "куриц",
+        "много дел",
+        "много слов",
+        "много мест"
+      ],
+      "facet_hints": {
+        "-ов": "masculine hard stems",
+        "-ев": "masculine soft stems",
+        "-ей": "after ж, ш, ч, щ; some soft",
+        "zero ending": "feminine -а, neuter -о",
+        "zero ending (soft)": "feminine -я",
+        "солдат": "exception — no ending",
+        "глаз": "irregular",
+        "человек → человек (GenPl)": "человек is invariantly singular in counting",
+        "яблок": "neuter, -ок → zero",
+        "облаков": "exceptional -ов on neuter",
+        "кофе": "no genitive plural form",
+        "сапог": "zero ending after vowel+",
+        "чулок": "zero ending",
+        "носок → носков": "with -ов",
+        "яблок, но апельсинов": "compare neuter vs masc",
+        "англичан": "zero ending",
+        "крестьян": "zero ending",
+        "ботинок → ботинок": "zero ending",
+        "туфель": "zero ending",
+        "полотенец": "-це → -ец",
+        "сердец": "-це → -ец",
+        "колец": "-ьцо → -ец",
+        "овец": "-ца → -ец",
+        "куриц": "exception",
+        "много дел": "дело → дел",
+        "много слов": "слово → слов",
+        "много мест": "место → мест"
+      }
+    },
+    "R017": {
+      "cluster": 3,
+      "name": "Genitive after numerals 2-4",
+      "description": "Numerals 2, 3, 4 take genitive singular",
+      "facets": [
+        "fem",
+        "masc",
+        "neut",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem": "feminine noun after 2-4",
+        "masc": "masculine noun after 2-4",
+        "neut": "neuter noun after 2-4",
+        "adj_agr": "adjective agreement after 2-4"
+      }
+    },
+    "R018": {
+      "cluster": 3,
+      "name": "Genitive prepositions",
+      "description": "без, до, из, от, у, около, для + Gen",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after genitive preposition",
+        "masc_sg": "masculine singular after genitive preposition",
+        "neut_sg": "neuter singular after genitive preposition",
+        "pl": "plural after genitive preposition",
+        "adj_agr": "adjective agreement after genitive preposition"
+      }
+    },
+    "R019": {
+      "cluster": 4,
+      "name": "Dative: indirect object",
+      "description": "Recipient in dative",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular in dative",
+        "masc_sg": "masculine singular in dative",
+        "neut_sg": "neuter singular in dative",
+        "pl": "plural in dative",
+        "adj_agr": "adjective agreement in dative"
+      }
+    },
+    "R020": {
+      "cluster": 4,
+      "name": "Dative: impersonal constructions",
+      "description": "Impersonal dative constructions",
+      "facets": [
+        "холодно",
+        "жарко",
+        "скучно",
+        "интересно",
+        "весело",
+        "грустно",
+        "страшно",
+        "стыдно",
+        "трудно",
+        "легко",
+        "хорошо",
+        "плохо",
+        "нужно",
+        "можно",
+        "нельзя",
+        "пора",
+        "хочется",
+        "нравится",
+        "кажется",
+        "хватает",
+        "не хватает",
+        "повезло",
+        "удалось",
+        "пришлось",
+        "хватит",
+        "больно",
+        "смешно",
+        "приятно",
+        "неприятно",
+        "неудобно",
+        "удобно",
+        "важно",
+        "интересно (знать)",
+        "ясно",
+        "понятно",
+        "непонятно",
+        "завидно",
+        "обидно",
+        "жаль",
+        "жарко (о погоде)"
+      ],
+      "facet_hints": {
+        "холодно": "Мне холодно — I'm cold",
+        "жарко": "Мне жарко — I'm hot",
+        "скучно": "Мне скучно — I'm bored",
+        "интересно": "Мне интересно — I find it interesting",
+        "весело": "Мне весело — I'm having fun",
+        "грустно": "Мне грустно — I feel sad",
+        "страшно": "Мне страшно — I'm scared",
+        "стыдно": "Мне стыдно — I'm ashamed",
+        "трудно": "Мне трудно — It's hard for me",
+        "легко": "Мне легко — It's easy for me",
+        "хорошо": "Мне хорошо — I feel good",
+        "плохо": "Мне плохо — I feel bad",
+        "нужно": "Мне нужно — I need",
+        "можно": "Мне можно — I'm allowed",
+        "нельзя": "Мне нельзя — I'm not allowed",
+        "пора": "Мне пора — It's time for me to go",
+        "хочется": "Мне хочется — I feel like",
+        "нравится": "Мне нравится — I like it",
+        "кажется": "Мне кажется — It seems to me",
+        "хватает": "Мне хватает — I have enough",
+        "не хватает": "Мне не хватает — I don't have enough",
+        "повезло": "Мне повезло — I got lucky",
+        "удалось": "Мне удалось — I managed to",
+        "пришлось": "Мне пришлось — I had to",
+        "хватит": "Мне хватит — That's enough for me",
+        "больно": "Мне больно — It hurts me",
+        "смешно": "Мне смешно — I find it funny",
+        "приятно": "Мне приятно — It's a pleasure for me",
+        "неприятно": "Мне неприятно — It bothers me",
+        "неудобно": "Мне неудобно — I feel awkward",
+        "удобно": "Мне удобно — It's convenient for me",
+        "важно": "Мне важно — It matters to me",
+        "интересно (знать)": "Мне интересно знать — I'm curious",
+        "ясно": "Мне ясно — It's clear to me",
+        "понятно": "Мне понятно — I understand",
+        "непонятно": "Мне непонятно — I don't understand",
+        "завидно": "Мне завидно — I'm envious",
+        "обидно": "Мне обидно — I feel hurt",
+        "жаль": "Мне жаль — I regret / I feel sorry",
+        "жарко (о погоде)": "Мне жарко — I'm hot (from heat)"
+      }
+    },
+    "R021": {
+      "cluster": 4,
+      "name": "Dative: age",
+      "description": "Age expressed with dative",
+      "facets": [
+        "мне ... лет",
+        "ему ... лет",
+        "ей ... лет",
+        "нам ... лет",
+        "вам ... лет",
+        "им ... лет",
+        "Сколько тебе лет?",
+        "Сколько вам лет?",
+        "под ... лет",
+        "за ... лет"
+      ],
+      "facet_hints": {
+        "мне ... лет": "Мне двадцать лет",
+        "ему ... лет": "Ему тридцать лет",
+        "ей ... лет": "Ей восемнадцать лет",
+        "нам ... лет": "Нам по двадцать лет",
+        "вам ... лет": "Сколько вам лет?",
+        "им ... лет": "Им по десять лет",
+        "Сколько тебе лет?": "informal",
+        "Сколько вам лет?": "formal/plural",
+        "под ... лет": "Ему под сорок",
+        "за ... лет": "Ей за тридцать"
+      }
+    },
+    "R022": {
+      "cluster": 4,
+      "name": "Dative: verbs governing dative",
+      "description": "Verbs that require dative",
+      "facets": [
+        "помогать",
+        "верить",
+        "звонить",
+        "дарить",
+        "писать",
+        "говорить",
+        "сообщать",
+        "мешать",
+        "завидовать",
+        "доверять",
+        "принадлежать",
+        "соответствовать",
+        "следовать",
+        "подражать",
+        "сочувствовать",
+        "возражать",
+        "приказывать",
+        "запрещать",
+        "разрешать",
+        "обещать",
+        "отвечать",
+        "противоречить",
+        "сопротивляться",
+        "удивляться",
+        "радоваться",
+        "улыбаться",
+        "кивать",
+        "махать",
+        "присягать",
+        "мстить",
+        "лгать",
+        "жаловаться",
+        "благодарить",
+        "желать",
+        "советовать",
+        "предлагать",
+        "показывать",
+        "объяснять",
+        "доказывать",
+        "напоминать",
+        "нравиться",
+        "казаться",
+        "стоить",
+        "хватать",
+        "хотеться",
+        "сниться",
+        "верить (в бога)",
+        "завидовать (белой завистью)",
+        "запрещать (себе)",
+        "разрешать (себе)"
+      ],
+      "facet_hints": {
+        "помогать": "помогать другу",
+        "верить": "верить другу",
+        "звонить": "звонить маме",
+        "дарить": "дарить подарок другу",
+        "писать": "писать письмо другу",
+        "говорить": "говорить другу",
+        "сообщать": "сообщать новости другу",
+        "мешать": "мешать соседу",
+        "завидовать": "завидовать другу",
+        "доверять": "доверять другу",
+        "принадлежать": "принадлежать государству",
+        "соответствовать": "соответствовать стандарту",
+        "следовать": "следовать правилу",
+        "подражать": "подражать отцу",
+        "сочувствовать": "сочувствовать другу",
+        "возражать": "возражать оппоненту",
+        "приказывать": "приказывать солдату",
+        "запрещать": "запрещать ребёнку",
+        "разрешать": "разрешать сыну",
+        "обещать": "обещать другу",
+        "отвечать": "отвечать учителю",
+        "противоречить": "противоречить фактам",
+        "сопротивляться": "сопротивляться врагу",
+        "удивляться": "удивляться словам",
+        "радоваться": "радоваться весне",
+        "улыбаться": "улыбаться другу",
+        "кивать": "кивать головой",
+        "махать": "махать рукой другу",
+        "присягать": "присягать родине",
+        "мстить": "мстить врагу",
+        "лгать": "лгать родителям",
+        "жаловаться": "жаловаться другу",
+        "благодарить": "благодарить друга",
+        "желать": "желать другу удачи",
+        "советовать": "советовать другу",
+        "предлагать": "предлагать другу помощь",
+        "показывать": "показывать другу город",
+        "объяснять": "объяснять ученику правило",
+        "доказывать": "доказывать суду невиновность",
+        "напоминать": "напоминать другу о встрече",
+        "нравиться": "мне нравится",
+        "казаться": "мне кажется",
+        "стоить": "сколько это тебе стоило?",
+        "хватать": "ему хватает денег",
+        "хотеться": "мне хочется",
+        "сниться": "мне снится",
+        "верить (в бога)": "верить в Бога",
+        "завидовать (белой завистью)": "colloquial",
+        "запрещать (себе)": "запрещать себе",
+        "разрешать (себе)": "разрешать себе"
+      }
+    },
+    "R023": {
+      "cluster": 4,
+      "name": "Dative prepositions",
+      "description": "к, по, благодаря, согласно + Dat",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after dative preposition",
+        "masc_sg": "masculine singular after dative preposition",
+        "neut_sg": "neuter singular after dative preposition",
+        "pl": "plural after dative preposition"
+      }
+    },
+    "R024": {
+      "cluster": 4,
+      "name": "Dative of experience",
+      "description": "Мне кажется, мне хочется, мне нужно",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R025": {
+      "cluster": 5,
+      "name": "Instrumental: means",
+      "description": "Instrument or means of action",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular in instrumental",
+        "masc_sg": "masculine singular in instrumental",
+        "neut_sg": "neuter singular in instrumental",
+        "pl": "plural in instrumental"
+      }
+    },
+    "R026": {
+      "cluster": 5,
+      "name": "Instrumental: accompaniment (с + Instr)",
+      "description": "С + instrumental for accompaniment",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after с",
+        "masc_sg": "masculine singular after с",
+        "neut_sg": "neuter singular after с",
+        "pl": "plural after с"
+      }
+    },
+    "R027": {
+      "cluster": 5,
+      "name": "Instrumental: verbs governing instrumental",
+      "description": "гордиться, заниматься, интересоваться",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after instrumental verb",
+        "masc_sg": "masculine singular after instrumental verb",
+        "neut_sg": "neuter singular after instrumental verb",
+        "pl": "plural after instrumental verb"
+      }
+    },
+    "R028": {
+      "cluster": 5,
+      "name": "Instrumental prepositions",
+      "description": "над, под, перед, между, за + Instr",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after instrumental preposition",
+        "masc_sg": "masculine singular after instrumental preposition",
+        "neut_sg": "neuter singular after instrumental preposition",
+        "pl": "plural after instrumental preposition"
+      }
+    },
+    "R029": {
+      "cluster": 5,
+      "name": "Instrumental: predicative",
+      "description": "Instrumental for profession or role",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular in predicative instrumental",
+        "masc_sg": "masculine singular in predicative instrumental",
+        "adj_agr": "adjective agreement in predicative instrumental"
+      }
+    },
+    "R030": {
+      "cluster": 6,
+      "name": "Prepositional: location",
+      "description": "в/на + prepositional for location",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl",
+        "adj_agr"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular prepositional",
+        "masc_sg": "masculine singular prepositional",
+        "neut_sg": "neuter singular prepositional",
+        "pl": "plural prepositional",
+        "adj_agr": "adjective agreement in prepositional"
+      }
+    },
+    "R031": {
+      "cluster": 6,
+      "name": "Prepositional: topic",
+      "description": "о/об + prepositional for topic",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after о",
+        "masc_sg": "masculine singular after о",
+        "neut_sg": "neuter singular after о",
+        "pl": "plural after о"
+      }
+    },
+    "R032": {
+      "cluster": 6,
+      "name": "Prepositional prepositions",
+      "description": "в, на, о, при + Prep",
+      "facets": [
+        "fem_sg",
+        "masc_sg",
+        "neut_sg",
+        "pl"
+      ],
+      "facet_hints": {
+        "fem_sg": "feminine singular after prepositional preposition",
+        "masc_sg": "masculine singular after prepositional preposition",
+        "neut_sg": "neuter singular after prepositional preposition",
+        "pl": "plural after prepositional preposition"
+      }
+    },
+    "R033": {
+      "cluster": 6,
+      "name": "Location vs direction",
+      "description": "Prep for location, Acc for direction",
+      "facets": [
+        "location",
+        "direction"
+      ],
+      "facet_hints": {
+        "location": "prepositional case for location",
+        "direction": "accusative case for direction"
+      }
+    },
+    "R034": {
+      "cluster": 6,
+      "name": "в/на with geographic names",
+      "description": "Usage of в/на with countries, cities",
+      "facets": [
+        "countries",
+        "cities",
+        "regions"
+      ],
+      "facet_hints": {
+        "countries": "в/на with country names",
+        "cities": "в/на with city names",
+        "regions": "в/на with region names"
+      }
+    },
+    "R035": {
+      "cluster": 7,
+      "name": "Declension: masculine nouns",
+      "description": "Hard and soft stem masculine declension",
+      "facets": [
+        "hard_stem",
+        "soft_stem"
+      ],
+      "facet_hints": {
+        "hard_stem": "hard-stem masculine declension",
+        "soft_stem": "soft-stem masculine declension"
+      }
+    },
+    "R036": {
+      "cluster": 7,
+      "name": "Declension: feminine nouns",
+      "description": "Hard and soft stem feminine declension",
+      "facets": [
+        "hard_stem",
+        "soft_stem"
+      ],
+      "facet_hints": {
+        "hard_stem": "hard-stem feminine declension",
+        "soft_stem": "soft-stem feminine declension"
+      }
+    },
+    "R037": {
+      "cluster": 7,
+      "name": "Declension: neuter nouns",
+      "description": "Neuter declension patterns",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R038": {
+      "cluster": 7,
+      "name": "Declension: adjectives full paradigm",
+      "description": "All six cases for adjectives",
+      "facets": [
+        "nom",
+        "acc",
+        "gen",
+        "dat",
+        "instr",
+        "prep"
+      ],
+      "facet_hints": {
+        "nom": "nominative adjective",
+        "acc": "accusative adjective",
+        "gen": "genitive adjective",
+        "dat": "dative adjective",
+        "instr": "instrumental adjective",
+        "prep": "prepositional adjective"
+      }
+    },
+    "R039": {
+      "cluster": 7,
+      "name": "Irregular nouns",
+      "description": "Irregular noun declensions",
+      "facets": [
+        "путь",
+        "мать",
+        "дочь",
+        "время",
+        "имя",
+        "семя",
+        "бремя",
+        "племя",
+        "пламя",
+        "знамя",
+        "темя",
+        "человек",
+        "ребёнок",
+        "хозяин",
+        "брат",
+        "друг",
+        "сын",
+        "кум",
+        "муж",
+        "лист",
+        "камень",
+        "уголь",
+        "яблоко",
+        "небо",
+        "чудо",
+        "дерево",
+        "стул",
+        "перо",
+        "крыло",
+        "дно",
+        "судно"
+      ],
+      "facet_hints": {
+        "путь": "masc — mixed declension (like fem -ь)",
+        "мать": "feminine — Gen/Dat/Prep на -ери",
+        "дочь": "same paradigm as мать",
+        "время": "neuter, на -мени in oblique cases",
+        "имя": "same as время",
+        "семя": "same",
+        "бремя": "same",
+        "племя": "same",
+        "пламя": "same",
+        "знамя": "same",
+        "темя": "rare",
+        "человек": "plural люди",
+        "ребёнок": "plural дети",
+        "хозяин": "plural хозяева",
+        "брат": "plural братья",
+        "друг": "plural друзья",
+        "сын": "plural сыновья (own sons) / сыны (of the motherland)",
+        "кум": "plural кумовья",
+        "муж": "plural мужья",
+        "лист": "plural листья (leaves) / листы (sheets)",
+        "камень": "plural камни",
+        "уголь": "plural угли",
+        "яблоко": "plural яблоки",
+        "небо": "plural небеса",
+        "чудо": "plural чудеса",
+        "дерево": "plural деревья",
+        "стул": "plural стулья",
+        "перо": "plural перья",
+        "крыло": "plural крылья",
+        "дно": "irregular",
+        "судно": "plural суда"
+      }
+    },
+    "R040": {
+      "cluster": 7,
+      "name": "Indeclinable nouns",
+      "description": "Nouns that don't decline",
+      "facets": [
+        "метро",
+        "пальто",
+        "кино",
+        "кофе",
+        "такси",
+        "меню",
+        "шоссе",
+        "шоу",
+        "радио",
+        "пианино",
+        "депо",
+        "бюро",
+        "кафе",
+        "купе",
+        "интервью",
+        "ателье",
+        "филе",
+        "жалюзи",
+        "пюре",
+        "желе",
+        "драже",
+        "кашне",
+        "пенсне",
+        "манто",
+        "досье",
+        "инкогнито",
+        "алиби",
+        "табу"
+      ],
+      "facet_hints": {
+        "метро": "metro",
+        "пальто": "coat",
+        "кино": "cinema",
+        "кофе": "masc (traditionally), doesn't decline",
+        "такси": "taxi",
+        "меню": "menu",
+        "шоссе": "highway",
+        "шоу": "show",
+        "радио": "radio",
+        "пианино": "piano",
+        "депо": "depot",
+        "бюро": "bureau",
+        "кафе": "cafe",
+        "купе": "compartment",
+        "интервью": "interview",
+        "ателье": "atelier",
+        "филе": "fillet",
+        "жалюзи": "blinds",
+        "пюре": "mashed potatoes",
+        "желе": "jelly",
+        "драже": "dragee",
+        "кашне": "scarf",
+        "пенсне": "pince-nez",
+        "манто": "mantle",
+        "досье": "dossier",
+        "инкогнито": "incognito",
+        "алиби": "alibi",
+        "табу": "taboo"
+      }
+    },
+    "R041": {
+      "cluster": 8,
+      "name": "Long-form attributive adjective",
+      "description": "Standard attributive adjective before noun",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R042": {
+      "cluster": 8,
+      "name": "Short-form predicative adjective",
+      "description": "Short form for state or condition",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R043": {
+      "cluster": 8,
+      "name": "Short-form in impersonal constructions",
+      "description": "Adverbs in short form as predicates",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R044": {
+      "cluster": 8,
+      "name": "Possessive adjectives",
+      "description": "мамин, папин, отцов, etc.",
+      "facets": [
+        "мамин",
+        "папин",
+        "бабушкин",
+        "дедушкин",
+        "отцов",
+        "сестрин",
+        "братов",
+        "дочкин",
+        "сынов",
+        "мужнин",
+        "женин",
+        "тётин",
+        "дядин",
+        "кошкин",
+        "собакин",
+        "лисин",
+        "волчий",
+        "медвежий",
+        "заячий",
+        "птичий"
+      ],
+      "facet_hints": {
+        "мамин": "мамин дом",
+        "папин": "папин кабинет",
+        "бабушкин": "бабушкин платок",
+        "дедушкин": "дедушкин сад",
+        "отцов": "отцов дом",
+        "сестрин": "сестрин плащ",
+        "братов": "broтов дом (usually брата)",
+        "дочкин": "дочкина кукла",
+        "сынов": "usually сына",
+        "мужнин": "usually мужа",
+        "женин": "usually жены",
+        "тётин": "тётин дом",
+        "дядин": "дядин кабинет",
+        "кошкин": "кошкин дом",
+        "собакин": "Собакино жильё",
+        "лисин": "лисина нора",
+        "волчий": "волчий вой",
+        "медвежий": "медвежья берлога",
+        "заячий": "заячья нора",
+        "птичий": "птичье гнездо"
+      }
+    },
+    "R045": {
+      "cluster": 8,
+      "name": "Adjective + numeral agreement",
+      "description": "Agreement in numeral phrases",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R046": {
+      "cluster": 9,
+      "name": "Comparative: simple form",
+      "description": "-ее, -е, -ше comparative",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R047": {
+      "cluster": 9,
+      "name": "Comparative: compound form",
+      "description": "более + adjective",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R048": {
+      "cluster": 9,
+      "name": "Superlative: simple and compound",
+      "description": "-ейший or самый + adjective",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R049": {
+      "cluster": 9,
+      "name": "Irregular comparatives",
+      "description": "хороший/лучше, плохой/хуже, etc.",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R050": {
+      "cluster": 10,
+      "name": "Aspect: perfective vs imperfective",
+      "description": "Core aspect distinction",
+      "facets": [
+        "past_perf",
+        "past_imperf",
+        "future_perf",
+        "future_imperf",
+        "in_context"
+      ],
+      "facet_hints": {
+        "past_perf": "past tense perfective",
+        "past_imperf": "past tense imperfective",
+        "future_perf": "future perfective",
+        "future_imperf": "future imperfective",
+        "in_context": "aspect choice in context"
+      }
+    },
+    "R051": {
+      "cluster": 10,
+      "name": "Aspect: prefix-based pairs",
+      "description": "писать/написать, делать/сделать",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R052": {
+      "cluster": 10,
+      "name": "Aspect: suppletive pairs",
+      "description": "говорить/сказать, брать/взять",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R053": {
+      "cluster": 10,
+      "name": "Aspect choice in context",
+      "description": "Choosing aspect based on sentence meaning",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R054": {
+      "cluster": 10,
+      "name": "Aspect in imperative",
+      "description": "Imperfective for invitation, perfective for command",
+      "facets": [
+        "imperf_imperative",
+        "perf_imperative"
+      ],
+      "facet_hints": {
+        "imperf_imperative": "imperfective imperative",
+        "perf_imperative": "perfective imperative"
+      }
+    },
+    "R055": {
+      "cluster": 10,
+      "name": "Aspect after phase verbs",
+      "description": "начать, продолжать, кончить + imperfective",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R056": {
+      "cluster": 10,
+      "name": "Prohibition aspect",
+      "description": "не делай vs не сделай",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R057": {
+      "cluster": 11,
+      "name": "Future: compound (imperfective)",
+      "description": "буду + infinitive",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R058": {
+      "cluster": 11,
+      "name": "Future: simple (perfective)",
+      "description": "Perfective present-tense form = future",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R059": {
+      "cluster": 11,
+      "name": "Imperative: formation",
+      "description": "Standard imperative endings",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R060": {
+      "cluster": 11,
+      "name": "Imperative: negative",
+      "description": "не + imperative",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R061": {
+      "cluster": 11,
+      "name": "Conditional/subjunctive (бы + past)",
+      "description": "Hypothetical conditions",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R062": {
+      "cluster": 11,
+      "name": "Optative constructions",
+      "description": "пусть, давай + forms",
+      "facets": [
+        "пусть",
+        "пускай",
+        "давай",
+        "давайте",
+        "да",
+        "хорошо бы",
+        "хотелось бы",
+        "если бы",
+        "вот бы",
+        "лучше бы"
+      ],
+      "facet_hints": {
+        "пусть": "Пусть он придёт",
+        "пускай": "Пускай попробует",
+        "давай": "Давай пойдём",
+        "давайте": "Давайте начнём",
+        "да": "Да здравствует мир!",
+        "хорошо бы": "Хорошо бы он пришёл",
+        "хотелось бы": "Хотелось бы знать",
+        "если бы": "Если бы я знал!",
+        "вот бы": "Вот бы поехать!",
+        "лучше бы": "Лучше бы ты молчал"
+      }
+    },
+    "R063": {
+      "cluster": 12,
+      "name": "Reflexive -ся: basic",
+      "description": "Action reflects back on subject",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R064": {
+      "cluster": 12,
+      "name": "Reflexive -ся: reciprocal",
+      "description": "Mutual action (целоваться, встречаться)",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R065": {
+      "cluster": 12,
+      "name": "Reflexive -ся: passive",
+      "description": "Passive voice with -ся",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R066": {
+      "cluster": 12,
+      "name": "Reflexive -ся: impersonal",
+      "description": "хочется, спится, работается",
+      "facets": [
+        "не спится",
+        "не сидится",
+        "не работается",
+        "не верится",
+        "хочется",
+        "не терпится",
+        "думается",
+        "верится",
+        "живётся",
+        "дышится",
+        "гуляется",
+        "читается",
+        "пишется",
+        "поётся",
+        "танцуется",
+        "не можется",
+        "икается",
+        "думается (мне)"
+      ],
+      "facet_hints": {
+        "не спится": "Мне не спится",
+        "не сидится": "Мне не сидится",
+        "не работается": "Мне не работается",
+        "не верится": "Мне не верится",
+        "хочется": "Мне хочется",
+        "не терпится": "Мне не терпится",
+        "думается": "Мне думается",
+        "верится": "Мне верится",
+        "живётся": "Как вам живётся?",
+        "дышится": "Легко дышится",
+        "гуляется": "Мне гуляется",
+        "читается": "Хорошо читается",
+        "пишется": "Легко пишется",
+        "поётся": "Мне поётся",
+        "танцуется": "Мне танцуется",
+        "не можется": "Мне не можется",
+        "икается": "Мне икается",
+        "думается (мне)": "Мне думается"
+      }
+    },
+    "R067": {
+      "cluster": 13,
+      "name": "Motion: unidirectional vs multidirectional",
+      "description": "Base motion verb pairs",
+      "facets": [
+        "идти",
+        "ходить",
+        "ехать",
+        "ездить",
+        "бежать",
+        "бегать",
+        "лететь",
+        "летать",
+        "плыть",
+        "плавать",
+        "нести",
+        "носить",
+        "везти",
+        "возить",
+        "вести",
+        "водить",
+        "ползти",
+        "ползать",
+        "лезть",
+        "лазать"
+      ],
+      "facet_hints": {
+        "идти": "Я иду в школу",
+        "ходить": "Я хожу в школу каждый день",
+        "ехать": "Я еду в Москву",
+        "ездить": "Я езжу в Москву часто",
+        "бежать": "Он бежит к автобусу",
+        "бегать": "Он бегает по утрам",
+        "лететь": "Самолёт летит в Париж",
+        "летать": "Он летает в Париж часто",
+        "плыть": "Корабль плывёт к берегу",
+        "плавать": "Она плавает в бассейне",
+        "нести": "Он несёт чемодан",
+        "носить": "Он носит очки",
+        "везти": "Он везёт детей на дачу",
+        "возить": "Он возит детей в школу",
+        "вести": "Он ведёт ребёнка в школу",
+        "водить": "Он водит машину",
+        "ползти": "Ребёнок ползёт к маме",
+        "ползать": "Ребёнок ползает по комнате",
+        "лезть": "Он лезет на дерево",
+        "лазать": "Дети лазают по деревьям"
+      }
+    },
+    "R068": {
+      "cluster": 13,
+      "name": "Motion: prefixed spatial forms",
+      "description": "Prefixed motion verbs with spatial meaning",
+      "facets": [
+        "прийти / приехать",
+        "уйти / уехать",
+        "выйти / выехать",
+        "войти / въехать",
+        "зайти / заехать",
+        "дойти / доехать",
+        "перейти / переехать",
+        "отойти / отъехать",
+        "подойти / подъехать",
+        "обойти / объехать"
+      ],
+      "facet_hints": {
+        "прийти / приехать": "Он пришёл домой",
+        "уйти / уехать": "Он ушёл на работу",
+        "выйти / выехать": "Он вышел из дома",
+        "войти / въехать": "Он вошёл в комнату",
+        "зайти / заехать": "Зайди ко мне вечером",
+        "дойти / доехать": "Я дошёл до парка",
+        "перейти / переехать": "Он перешёл улицу",
+        "отойти / отъехать": "Он отошёл от двери",
+        "подойти / подъехать": "Он подошёл к столу",
+        "обойти / объехать": "Мы обошли лужу"
+      }
+    },
+    "R069": {
+      "cluster": 13,
+      "name": "Motion: prefixed aspect pairs",
+      "description": "приходить/прийти, уезжать/уехать",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R070": {
+      "cluster": 13,
+      "name": "Motion: figurative uses",
+      "description": "идти о чём, время идёт",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R071": {
+      "cluster": 13,
+      "name": "Motion: по- perfective inchoative",
+      "description": "пойти, поехать = start going",
+      "facets": [
+        "пойти",
+        "поехать",
+        "полететь",
+        "поплыть",
+        "побежать",
+        "понести",
+        "повести",
+        "повезти",
+        "погнать",
+        "полезть",
+        "поползти"
+      ],
+      "facet_hints": {
+        "пойти": "пошёл домой",
+        "поехать": "поехал в Москву",
+        "полететь": "полетел в Париж",
+        "поплыть": "поплыл к берегу",
+        "побежать": "побежал за автобусом",
+        "понести": "понёс чемодан",
+        "повести": "повёл ребёнка в школу",
+        "повезти": "повёз детей на дачу",
+        "погнать": "погнал стадо",
+        "полезть": "полез на дерево",
+        "поползти": "пополз по полу"
+      }
+    },
+    "R072": {
+      "cluster": 13,
+      "name": "Motion: imperative forms",
+      "description": "иди vs ходи in commands",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R073": {
+      "cluster": 14,
+      "name": "Verb government: Genitive",
+      "description": "бояться, избегать, желать + Gen",
+      "facets": [
+        "бояться",
+        "избегать",
+        "желать",
+        "хотеть",
+        "добиваться",
+        "достигать",
+        "касаться",
+        "держаться",
+        "лишаться",
+        "слушаться",
+        "стесняться",
+        "стыдиться",
+        "ждать",
+        "искать",
+        "требовать",
+        "просить",
+        "ожидать",
+        "опасаться",
+        "чуждаться",
+        "остерегаться",
+        "сторониться",
+        "придерживаться",
+        "надеяться",
+        "дожидаться",
+        "дотрагиваться",
+        "касаться (темы)",
+        "избегать (встречи)",
+        "достигнуть",
+        "удостаиваться",
+        "напиться",
+        "наесться",
+        "насмотреться"
+      ],
+      "facet_hints": {
+        "бояться": "бояться собаки",
+        "избегать": "избегать ошибок",
+        "желать": "желать успеха",
+        "хотеть": "хотеть воды (partitive use)",
+        "добиваться": "добиваться цели",
+        "достигать": "достигать вершины",
+        "касаться": "касаться вопроса",
+        "держаться": "держаться правила",
+        "лишаться": "лишаться права",
+        "слушаться": "слушаться родителей",
+        "стесняться": "стесняться людей",
+        "стыдиться": "стыдиться поступка",
+        "ждать": "ждать поезда",
+        "искать": "искать выхода",
+        "требовать": "требовать объяснений",
+        "просить": "просить прощения",
+        "ожидать": "ожидать перемен",
+        "опасаться": "опасаться последствий",
+        "чуждаться": "чуждаться общества",
+        "остерегаться": "остерегаться мошенников",
+        "сторониться": "сторониться людей",
+        "придерживаться": "придерживаться мнения",
+        "надеяться": "надеяться на лучшее",
+        "дожидаться": "дожидаться утра",
+        "дотрагиваться": "дотрагиваться рукой",
+        "касаться (темы)": "касаться темы",
+        "избегать (встречи)": "избегать встречи",
+        "достигнуть": "достигнуть соглашения",
+        "удостаиваться": "удостаиваться награды",
+        "напиться": "напиться воды",
+        "наесться": "наесться хлеба",
+        "насмотреться": "насмотреться фильмов"
+      }
+    },
+    "R074": {
+      "cluster": 14,
+      "name": "Verb government: Instrumental",
+      "description": "гордиться, руководить, интересоваться + Instr",
+      "facets": [
+        "гордиться",
+        "интересоваться",
+        "заниматься",
+        "увлекаться",
+        "руководить",
+        "управлять",
+        "владеть",
+        "обладать",
+        "пользоваться",
+        "восхищаться",
+        "наслаждаться",
+        "являться",
+        "казаться",
+        "оказаться",
+        "становиться",
+        "оставаться",
+        "притворяться",
+        "представляться",
+        "хвастаться",
+        "дорожить",
+        "рисковать",
+        "жертвовать",
+        "славиться",
+        "отличаться",
+        "характеризоваться",
+        "заниматься (спортом)",
+        "пользоваться (успехом)",
+        "располагать",
+        "распоряжаться",
+        "командовать",
+        "дирижировать",
+        "пренебрегать",
+        "злоупотреблять",
+        "кичиться",
+        "тяготиться",
+        "удовлетворяться",
+        "пахнуть",
+        "выглядеть",
+        "называться",
+        "считаться"
+      ],
+      "facet_hints": {
+        "гордиться": "гордиться сыном",
+        "интересоваться": "интересоваться историей",
+        "заниматься": "заниматься спортом",
+        "увлекаться": "увлекаться музыкой",
+        "руководить": "руководить отделом",
+        "управлять": "управлять компанией",
+        "владеть": "владеть языком",
+        "обладать": "обладать талантом",
+        "пользоваться": "пользоваться телефоном",
+        "восхищаться": "восхищаться картиной",
+        "наслаждаться": "наслаждаться музыкой",
+        "являться": "являться примером",
+        "казаться": "казаться странным",
+        "оказаться": "оказаться правым",
+        "становиться": "становиться врачом",
+        "оставаться": "оставаться спокойным",
+        "притворяться": "притворяться больным",
+        "представляться": "представляться гостем",
+        "хвастаться": "хвастаться успехами",
+        "дорожить": "дорожить дружбой",
+        "рисковать": "рисковать здоровьем",
+        "жертвовать": "жертвовать собой",
+        "славиться": "славиться гостеприимством",
+        "отличаться": "отличаться умом",
+        "характеризоваться": "характеризоваться качеством",
+        "заниматься (спортом)": "заниматься спортом",
+        "пользоваться (успехом)": "пользоваться успехом",
+        "располагать": "располагать временем",
+        "распоряжаться": "распоряжаться средствами",
+        "командовать": "командовать армией",
+        "дирижировать": "дирижировать оркестром",
+        "пренебрегать": "пренебрегать правилами",
+        "злоупотреблять": "злоупотреблять властью",
+        "кичиться": "кичиться богатством",
+        "тяготиться": "тяготиться работой",
+        "удовлетворяться": "удовлетворяться малым",
+        "пахнуть": "Пахнет цветами",
+        "выглядеть": "Он выглядит усталым",
+        "называться": "Это называется городом",
+        "считаться": "Он считается специалистом"
+      }
+    },
+    "R075": {
+      "cluster": 14,
+      "name": "Verb government: Dative",
+      "description": "помогать, верить, звонить + Dat",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R076": {
+      "cluster": 14,
+      "name": "Verb government: о/в/на + Prep",
+      "description": "думать о, верить в, смотреть на",
+      "facets": [
+        "думать о",
+        "говорить о",
+        "мечтать о",
+        "забыть о",
+        "помнить о",
+        "жалеть о",
+        "беспокоиться о",
+        "заботиться о",
+        "верить в",
+        "играть в",
+        "смотреть на",
+        "надеяться на",
+        "обращать внимание на",
+        "жаловаться на",
+        "сердиться на",
+        "обижаться на",
+        "соглашаться на",
+        "реагировать на",
+        "влиять на",
+        "указывать на",
+        "намекать на",
+        "ссылаться на",
+        "опираться на",
+        "претендовать на",
+        "отвечать на",
+        "подписываться на",
+        "соглашаться с",
+        "спорить с",
+        "разговаривать с",
+        "встречаться с",
+        "знакомиться с",
+        "сражаться с",
+        "бороться с",
+        "поздравлять с",
+        "сравнивать с",
+        "связываться с",
+        "расставаться с",
+        "мириться с",
+        "обращаться с",
+        "покончить с",
+        "разбираться в",
+        "нуждаться в",
+        "сомневаться в",
+        "участвовать в",
+        "обвинять в",
+        "подозревать в",
+        "признаваться в",
+        "отказываться от",
+        "зависеть от",
+        "страдать от",
+        "убегать от",
+        "прятаться от",
+        "уклоняться от",
+        "освобождаться от"
+      ],
+      "facet_hints": {
+        "думать о": "думать о будущем",
+        "говорить о": "говорить о работе",
+        "мечтать о": "мечтать о поездке",
+        "забыть о": "забыть о встрече",
+        "помнить о": "помнить о долге",
+        "жалеть о": "жалеть о сказанном",
+        "беспокоиться о": "беспокоиться о детях",
+        "заботиться о": "заботиться о родителях",
+        "верить в": "верить в успех",
+        "играть в": "играть в футбол",
+        "смотреть на": "смотреть на море",
+        "надеяться на": "надеяться на лучшее",
+        "обращать внимание на": "обращать внимание на детали",
+        "жаловаться на": "жаловаться на боль",
+        "сердиться на": "сердиться на сына",
+        "обижаться на": "обижаться на друга",
+        "соглашаться на": "соглашаться на условия",
+        "реагировать на": "реагировать на критику",
+        "влиять на": "влиять на решение",
+        "указывать на": "указывать на ошибки",
+        "намекать на": "намекать на проблему",
+        "ссылаться на": "ссылаться на источник",
+        "опираться на": "опираться на факты",
+        "претендовать на": "претендовать на место",
+        "отвечать на": "отвечать на вопрос",
+        "подписываться на": "подписываться на канал",
+        "соглашаться с": "соглашаться с мнением",
+        "спорить с": "спорить с другом",
+        "разговаривать с": "разговаривать с мамой",
+        "встречаться с": "встречаться с друзьями",
+        "знакомиться с": "знакомиться с городом",
+        "сражаться с": "сражаться с врагом",
+        "бороться с": "бороться с проблемой",
+        "поздравлять с": "поздравлять с праздником",
+        "сравнивать с": "сравнивать с оригиналом",
+        "связываться с": "связываться с редакцией",
+        "расставаться с": "расставаться с прошлым",
+        "мириться с": "мириться с положением",
+        "обращаться с": "обращаться с книгой",
+        "покончить с": "покончить с привычкой",
+        "разбираться в": "разбираться в технике",
+        "нуждаться в": "нуждаться в помощи",
+        "сомневаться в": "сомневаться в успехе",
+        "участвовать в": "участвовать в конкурсе",
+        "обвинять в": "обвинять в обмане",
+        "подозревать в": "подозревать в краже",
+        "признаваться в": "признаваться в любви",
+        "отказываться от": "отказываться от помощи",
+        "зависеть от": "зависеть от погоды",
+        "страдать от": "страдать от боли",
+        "убегать от": "убегать от проблем",
+        "прятаться от": "прятаться от дождя",
+        "уклоняться от": "уклоняться от ответа",
+        "освобождаться от": "освобождаться от обязательств"
+      }
+    },
+    "R077": {
+      "cluster": 14,
+      "name": "Verb government: direct object variations",
+      "description": "Verbs taking Acc vs Gen objects",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R078": {
+      "cluster": 15,
+      "name": "Prefixes: aspectual",
+      "description": "по-, про-, за- as delimitative/inceptive",
+      "facets": [
+        "po",
+        "pro",
+        "za"
+      ],
+      "facet_hints": {
+        "po": "по- delimitative prefix",
+        "pro": "про- completive prefix",
+        "za": "за- inceptive prefix"
+      }
+    },
+    "R079": {
+      "cluster": 15,
+      "name": "Prefixes: spatial",
+      "description": "в-, вы-, при-, у-, от-, под-, над-, пере-",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R080": {
+      "cluster": 15,
+      "name": "Prefixes: lexical",
+      "description": "пере- re-, недо- under-, etc.",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R081": {
+      "cluster": 16,
+      "name": "Present active participle",
+      "description": "-ущий/-ющий form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R082": {
+      "cluster": 16,
+      "name": "Past active participle",
+      "description": "-вший form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R083": {
+      "cluster": 16,
+      "name": "Present passive participle",
+      "description": "-емый/-имый form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R084": {
+      "cluster": 16,
+      "name": "Past passive participle",
+      "description": "-нный/-тый form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R085": {
+      "cluster": 16,
+      "name": "Short-form passive participle",
+      "description": "Short passive for state",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R086": {
+      "cluster": 17,
+      "name": "Imperfective gerund",
+      "description": "-а/-я form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R087": {
+      "cluster": 17,
+      "name": "Perfective gerund",
+      "description": "-в/-вши form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R088": {
+      "cluster": 17,
+      "name": "Gerund usage and constraints",
+      "description": "Same-subject rule; stylistic register",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R089": {
+      "cluster": 18,
+      "name": "Personal pronouns: Nominative",
+      "description": "я, ты, он, она, оно, мы, вы, они",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R090": {
+      "cluster": 18,
+      "name": "Personal pronouns: full case paradigm",
+      "description": "меня, мне, мной, обо мне, etc.",
+      "facets": [
+        "acc",
+        "gen",
+        "dat",
+        "instr",
+        "prep"
+      ],
+      "facet_hints": {
+        "acc": "personal pronoun accusative",
+        "gen": "personal pronoun genitive",
+        "dat": "personal pronoun dative",
+        "instr": "personal pronoun instrumental",
+        "prep": "personal pronoun prepositional"
+      }
+    },
+    "R091": {
+      "cluster": 18,
+      "name": "Personal pronouns with prepositions",
+      "description": "у меня, к нему, с ней",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R092": {
+      "cluster": 18,
+      "name": "Possessive pronouns",
+      "description": "мой, твой, наш, ваш, его, её, их",
+      "facets": [
+        "masc",
+        "fem",
+        "neut",
+        "pl"
+      ],
+      "facet_hints": {
+        "masc": "masculine possessive agreement",
+        "fem": "feminine possessive agreement",
+        "neut": "neuter possessive agreement",
+        "pl": "plural possessive agreement"
+      }
+    },
+    "R093": {
+      "cluster": 18,
+      "name": "Possessive-reflexive свой",
+      "description": "свой vs его/её/их",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R094": {
+      "cluster": 19,
+      "name": "Reflexive pronoun себя",
+      "description": "No nominative form",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R095": {
+      "cluster": 19,
+      "name": "Demonstrative pronouns",
+      "description": "этот, тот, такой",
+      "facets": [
+        "etot",
+        "tot",
+        "takoy"
+      ],
+      "facet_hints": {
+        "etot": "этот (this)",
+        "tot": "тот (that)",
+        "takoy": "такой (such)"
+      }
+    },
+    "R096": {
+      "cluster": 19,
+      "name": "Determinative pronouns",
+      "description": "весь, сам, самый",
+      "facets": [
+        "ves",
+        "sam",
+        "samy"
+      ],
+      "facet_hints": {
+        "ves": "весь (all)",
+        "sam": "сам (self)",
+        "samy": "самый (the very)"
+      }
+    },
+    "R097": {
+      "cluster": 19,
+      "name": "Interrogative and relative pronouns",
+      "description": "кто, что, какой, чей, который",
+      "facets": [
+        "kto_chto",
+        "kakoy",
+        "chey",
+        "kotory"
+      ],
+      "facet_hints": {
+        "kto_chto": "кто/что",
+        "kakoy": "какой",
+        "chey": "чей",
+        "kotory": "который"
+      }
+    },
+    "R098": {
+      "cluster": 19,
+      "name": "Negative and indefinite pronouns",
+      "description": "никто, ничто, кто-то, кое-кто",
+      "facets": [
+        "negative",
+        "indefinite"
+      ],
+      "facet_hints": {
+        "negative": "negative pronouns (никто, ничто)",
+        "indefinite": "indefinite pronouns (кто-то, кое-кто)"
+      }
+    },
+    "R099": {
+      "cluster": 20,
+      "name": "Cardinal numerals 1-20",
+      "description": "один, два, три... двадцать",
+      "facets": [
+        "one",
+        "two_four",
+        "five_plus",
+        "gender_agreement"
+      ],
+      "facet_hints": {
+        "one": "numeral один",
+        "two_four": "numerals 2-4",
+        "five_plus": "numerals 5+",
+        "gender_agreement": "gender agreement of numerals"
+      }
+    },
+    "R100": {
+      "cluster": 20,
+      "name": "Declension of один",
+      "description": "Agrees like adjective",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R101": {
+      "cluster": 20,
+      "name": "Declension of два, три, четыре",
+      "description": "Special declension patterns",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R102": {
+      "cluster": 20,
+      "name": "Declension of пять and above",
+      "description": "Decline like nouns",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R103": {
+      "cluster": 20,
+      "name": "Ordinal numerals",
+      "description": "первый, второй...",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R104": {
+      "cluster": 20,
+      "name": "Collective numerals",
+      "description": "двое, трое, четверо",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R105": {
+      "cluster": 20,
+      "name": "Fractions",
+      "description": "половина, треть, две трети",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R106": {
+      "cluster": 20,
+      "name": "Compound numbers",
+      "description": "21, 32, 104 — only last part declines",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R107": {
+      "cluster": 21,
+      "name": "Adverb formation",
+      "description": "-о/-е from adjectives",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R108": {
+      "cluster": 21,
+      "name": "Adverb comparative and superlative",
+      "description": "-ее, -ше; быстрее всех",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R109": {
+      "cluster": 21,
+      "name": "Adverb position in sentence",
+      "description": "Placement changes emphasis",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R110": {
+      "cluster": 21,
+      "name": "Negative and indefinite adverbs",
+      "description": "нигде, никогда; где-то, куда-нибудь",
+      "facets": [
+        "negative",
+        "indefinite"
+      ],
+      "facet_hints": {
+        "negative": "negative adverbs (нигде, никогда)",
+        "indefinite": "indefinite adverbs (где-то, куда-нибудь)"
+      }
+    },
+    "R111": {
+      "cluster": 22,
+      "name": "Prepositions + Accusative",
+      "description": "в, на, за, про, через + Acc",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R112": {
+      "cluster": 22,
+      "name": "Prepositions + Genitive",
+      "description": "без, до, из, от, у, около, для + Gen",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R113": {
+      "cluster": 22,
+      "name": "Prepositions + Dative",
+      "description": "к, по, благодаря + Dat",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R114": {
+      "cluster": 22,
+      "name": "Prepositions + Instrumental",
+      "description": "над, под, перед, между, с + Instr",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R115": {
+      "cluster": 22,
+      "name": "Prepositions + Prepositional",
+      "description": "в, на, о, при + Prep",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R116": {
+      "cluster": 23,
+      "name": "Coordinating conjunctions",
+      "description": "и, а, но, да, или, либо",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R117": {
+      "cluster": 23,
+      "name": "Subordinating: что, чтобы",
+      "description": "Clause introduction",
+      "facets": [
+        "chto",
+        "chtoby"
+      ],
+      "facet_hints": {
+        "chto": "что clause",
+        "chtoby": "чтобы clause"
+      }
+    },
+    "R118": {
+      "cluster": 23,
+      "name": "Subordinating: cause",
+      "description": "потому что, так как, поскольку",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R119": {
+      "cluster": 23,
+      "name": "Subordinating: concessive",
+      "description": "хотя, несмотря на то что",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R120": {
+      "cluster": 23,
+      "name": "Temporal conjunctions",
+      "description": "когда, пока, после того как, перед тем как",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R121": {
+      "cluster": 23,
+      "name": "Relative clauses with который",
+      "description": "Case and agreement",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R122": {
+      "cluster": 24,
+      "name": "Direct speech",
+      "description": "Punctuation and framing",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R123": {
+      "cluster": 24,
+      "name": "Indirect speech: statements",
+      "description": "что + shifted clause",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R124": {
+      "cluster": 24,
+      "name": "Indirect speech: questions and imperatives",
+      "description": "Reported questions and commands",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R125": {
+      "cluster": 25,
+      "name": "Negation: не",
+      "description": "Standard negation",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R126": {
+      "cluster": 25,
+      "name": "Negation: ни (multiple negation)",
+      "description": "никто не, никогда не",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R127": {
+      "cluster": 25,
+      "name": "Emphatic particles",
+      "description": "же, ведь, -то, именно",
+      "facets": [
+        "zhe",
+        "ved",
+        "to",
+        "imenno"
+      ],
+      "facet_hints": {
+        "zhe": "же (emphasis)",
+        "ved": "ведь (after all)",
+        "to": "-то (emphasis suffix)",
+        "imenno": "именно (precisely)"
+      }
+    },
+    "R128": {
+      "cluster": 25,
+      "name": "Question particles",
+      "description": "ли, разве, неужели",
+      "facets": [
+        "li",
+        "razve",
+        "neuzheli"
+      ],
+      "facet_hints": {
+        "li": "ли (question particle)",
+        "razve": "разве (really?)",
+        "neuzheli": "неужели (could it be?)"
+      }
+    },
+    "R129": {
+      "cluster": 25,
+      "name": "Neutral word order",
+      "description": "SVO default order",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R130": {
+      "cluster": 25,
+      "name": "Topic/comment and emphasis",
+      "description": "Word order for information structure",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    },
+    "R131": {
+      "cluster": 25,
+      "name": "Inversion for questions",
+      "description": "Question formation and stylistic inversion",
+      "facets": [
+        "default"
+      ],
+      "facet_hints": {}
+    }
+  },
+  "state": {
+    "R001": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R002": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R003": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R004": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R005": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R006": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R007": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R008": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R009": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R010": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R011": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R012": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R013": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R014": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R015": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R016": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R017": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R018": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R019": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R020": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R021": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R022": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R023": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R024": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R025": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R026": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R027": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R028": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R029": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R030": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R031": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R032": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R033": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R034": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R035": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R036": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R037": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R038": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R039": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R040": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R041": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R042": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R043": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R044": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R045": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R046": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R047": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R048": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R049": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R050": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R051": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R052": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R053": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R054": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R055": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R056": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R057": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R058": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R059": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R060": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R061": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R062": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R063": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R064": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R065": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R066": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R067": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R068": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R069": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R070": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R071": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R072": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R073": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R074": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R075": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R076": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R077": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R078": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R079": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R080": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R081": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R082": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R083": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R084": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R085": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R086": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R087": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R088": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R089": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R090": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R091": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R092": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R093": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R094": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R095": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R096": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R097": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R098": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R099": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R100": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R101": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R102": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R103": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R104": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R105": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R106": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R107": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R108": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R109": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R110": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R111": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R112": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R113": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R114": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R115": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R116": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R117": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R118": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R119": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R120": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R121": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R122": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R123": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R124": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R125": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R126": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R127": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R128": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R129": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R130": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    },
+    "R131": {
+      "state": "unlearned",
+      "times_tested": 0,
+      "times_correct": 0,
+      "last_tested": null,
+      "last_failed": null,
+      "last_failed_facet": null,
+      "facets": {},
+      "consecutive_correct": 0
+    }
+  }
+}

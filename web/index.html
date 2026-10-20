@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AInki</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/shell.css">
+</head>
+<body data-mode="in" data-lang="en">
+    <div class="app">
+
+        <header class="header">
+            <div class="title">
+                <span class="logo">AInki</span>
+                <div class="mode-toggle" role="tablist" aria-label="Half">
+                    <button type="button" class="mode-btn active" data-mode="in"  role="tab" aria-selected="true">IN</button>
+                    <button type="button" class="mode-btn"        data-mode="out" role="tab" aria-selected="false">OUT</button>
+                </div>
+                <div class="lang-toggle" role="tablist" aria-label="Language">
+                    <button type="button" class="lang-btn active" data-lang="en" role="tab" aria-selected="true">EN</button>
+                    <button type="button" class="lang-btn"        data-lang="ru" role="tab" aria-selected="false">RU</button>
+                </div>
+                <button type="button" class="pause-btn" id="pauseBtn" title="Pause session">⏸</button>
+            </div>
+            <div class="stats-mini" id="statsMini">
+                <div class="stat-item">
+                    <span class="stat-num" id="statNew">0</span>
+                    <span class="stat-lbl">new</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" id="statDue">0</span>
+                    <span class="stat-lbl">due</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" id="statReviewed">0</span>
+                    <span class="stat-lbl">done</span>
+                </div>
+            </div>
+        </header>
+
+        <section id="shell-in" class="shell shell-active">
+
+            <div class="progress-wrap">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-card-timer" id="progressCardTimer"></div>
+                </div>
+                <div class="progress-text" id="progressText">— / —</div>
+            </div>
+
+            <div class="in-split">
+                <div class="in-card-pane">
+                    <div class="card-area">
+
+                        <div id="start-panel" class="start-panel">
+                            <div id="start-stage-gen">
+                                <button id="start-session-btn" class="start-btn">▶ Start session</button>
+                                <div id="start-progress" class="start-progress">
+                                    <div class="start-progress-track">
+                                        <div class="start-progress-fill" id="start-progress-fill"></div>
+                                    </div>
+                                    <div class="start-progress-msg" id="start-progress-msg"></div>
+                                </div>
+                            </div>
+
+                            <div id="start-stage-time" style="display:none;">
+                                <div class="start-stage-title" id="start-cards-count">—</div>
+                                <div class="start-stage-sub">Choose session time.</div>
+                                <div class="start-stage-input-row">
+                                    <input type="number" id="start-minutes" class="start-minutes" value="60" min="0" max="300" step="5" />
+                                    <span class="start-minutes-label">minutes</span>
+                                </div>
+                                <div class="start-stage-hint">0 = no timer</div>
+                                <button id="start-begin-btn" class="start-btn">Start</button>
+                            </div>
+                        </div>
+
+                        <div class="card" id="card" tabindex="-1">
+                            <div class="word-ru" id="cardWord">Loading…</div>
+                            <div class="sentence-ru" id="cardSentence"></div>
+
+                            <div class="english-block" id="englishBlock">
+                                <div class="divider"></div>
+                                <div class="word-en" id="cardWordTranslation"></div>
+                                <div class="sentence-en" id="cardTranslation"></div>
+                            </div>
+
+                            <button class="sentence-nav" id="sentenceNav" type="button">
+                                <span class="nav-arrow">↓</span>
+                                <span class="nav-count" id="sentenceCount">1 / 1</span>
+                            </button>
+
+                            <div class="hint-front" id="hintFront">
+                                Any key to reveal · ↓ to cycle
+                            </div>
+
+                            <div class="card-empty" id="cardEmpty">
+                                <div class="empty-icon">🎉</div>
+                                <div class="empty-title">All done!</div>
+                                <div class="empty-sub">Come back tomorrow.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="controls" id="controls">
+                        <button class="ctrl-btn" data-action="again">
+                            <span class="ctrl-key">←</span>
+                            <span class="ctrl-label">Again</span>
+                        </button>
+                        <button class="ctrl-btn" data-action="hard">
+                            <span class="ctrl-key">↑</span>
+                            <span class="ctrl-label">Hard</span>
+                        </button>
+                        <button class="ctrl-btn" data-action="good">
+                            <span class="ctrl-key">→</span>
+                            <span class="ctrl-label">Good</span>
+                        </button>
+                        <button class="ctrl-btn" data-action="undo">
+                            <span class="ctrl-key">Shift</span>
+                            <span class="ctrl-label">Undo</span>
+                        </button>
+                        <button class="ctrl-btn" data-action="cycle">
+                            <span class="ctrl-key">↓</span>
+                            <span class="ctrl-label">Cycle</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="in-chat-pane">
+                    <div class="chat-pane">
+                        <div class="chat-scroll" id="inChatScroll">
+                            <div class="chat-msg chat-msg-bot">
+                                <div class="chat-avatar">🤖</div>
+                                <div class="chat-bubble">Ask me anything about the current card.</div>
+                            </div>
+                        </div>
+                        <div class="chat-input-row">
+                            <textarea
+                                class="chat-textarea"
+                                id="inChatInput"
+                                data-lang="en"
+                                placeholder="Ask about the card… (Tab to write)"
+                                rows="1"
+                                spellcheck="false"
+                                autocomplete="off"
+                            ></textarea>
+                            <button class="chat-send" id="inChatSend">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="shell-out" class="shell">
+
+            <div class="out-header">
+                <div class="out-controls">
+                    <div class="stepper" id="grammarStepper" title="Click the topic name to pick from a list">
+                        <button type="button" class="stepper-btn" id="grammarMinus">−</button>
+                        <button type="button" class="stepper-value stepper-value-clickable" id="grammarLabel">Core Sentence</button>
+                        <button type="button" class="stepper-btn" id="grammarPlus">+</button>
+                        <div class="stepper-dropdown" id="grammarDropdown"></div>
+                    </div>
+
+                    <div class="stepper">
+                        <button type="button" class="stepper-btn" id="vocabMinus">−</button>
+                        <span class="stepper-value" id="vocabLabel">B1</span>
+                        <button type="button" class="stepper-btn" id="vocabPlus">+</button>
+                    </div>
+
+                    <div class="stepper">
+                        <button type="button" class="stepper-btn" id="bufferMinus">−</button>
+                        <span class="stepper-value" id="bufferLabel">10</span>
+                        <button type="button" class="stepper-btn" id="bufferPlus">+</button>
+                    </div>
+                </div>
+
+                <div class="out-mode-buttons" role="tablist" aria-label="Output mode">
+                    <button type="button" class="out-mode-btn active" data-outmode="loop"  role="tab" aria-selected="true">Loop</button>
+                    <button type="button" class="out-mode-btn"        data-outmode="drill" role="tab" aria-selected="false">Drill</button>
+                    <button type="button" class="out-mode-btn"        data-outmode="write" role="tab" aria-selected="false">Write</button>
+                </div>
+            </div>
+
+            <div class="out-split">
+                <div class="out-write-pane focused" id="outWritePane">
+                    <div class="out-prompt">
+                        <div class="out-prompt-label" id="outPromptLabel">LOOP</div>
+                        <div class="out-prompt-text" id="outPromptText">Loading…</div>
+                        <div class="out-prompt-sub" id="outPromptSub"></div>
+                    </div>
+                    <textarea
+                        class="out-write-textarea"
+                        id="outWriteTextarea"
+                        data-lang="ru"
+                        placeholder="Пиши здесь…"
+                        spellcheck="false"
+                        autocomplete="off"
+                    ></textarea>
+                    <div class="out-write-hint" id="outWriteHint">RU · Enter to submit</div>
+                </div>
+
+                <div class="out-chat-pane" id="outChatPane">
+                    <div class="chat-scroll" id="outChatScroll">
+                        <div class="chat-msg chat-msg-bot">
+                            <div class="chat-avatar">🤖</div>
+                            <div class="chat-bubble">Analysis and feedback will appear here.</div>
+                        </div>
+                    </div>
+                    <div class="chat-input-row">
+                        <textarea
+                            class="chat-textarea"
+                            id="outChatInput"
+                            data-lang="en"
+                            placeholder="Chat (English)…"
+                            rows="1"
+                            spellcheck="false"
+                            autocomplete="off"
+                        ></textarea>
+                        <button class="chat-send" id="outChatSend">Send</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="/keyboard.js"></script>
+    <script src="/shell.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

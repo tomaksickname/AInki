@@ -1,0 +1,47 @@
+# Secrets and personal config
+.env
+.env.*
+!.env.example
+config/config.json
+
+# Personal data and state
+data/
+!data-template/
+output/
+logs/
+stories/
+audio/
+prompts.txt
+translations.txt
+OG*.json
+
+# macOS junk
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+venv/
+.venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# The weird file from your typo
+check_reviews.pynano*
+
+# Backups
+*.bak
+*.orig
+
+# Large generated files
+*.mp3
+*.wav
+*.zip
